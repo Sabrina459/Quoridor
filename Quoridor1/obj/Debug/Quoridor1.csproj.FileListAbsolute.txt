@@ -1,0 +1,10 @@
+C:\Users\sabri\source\repos\Quoridor1\bin\Debug\Quoridor1.exe.config
+C:\Users\sabri\source\repos\Quoridor1\bin\Debug\Quoridor1.exe
+C:\Users\sabri\source\repos\Quoridor1\bin\Debug\Quoridor1.pdb
+C:\Users\sabri\source\repos\Quoridor1\obj\Debug\Quoridor1.csproj.AssemblyReference.cache
+C:\Users\sabri\source\repos\Quoridor1\obj\Debug\Quoridor1.Form1.resources
+C:\Users\sabri\source\repos\Quoridor1\obj\Debug\Quoridor1.Properties.Resources.resources
+C:\Users\sabri\source\repos\Quoridor1\obj\Debug\Quoridor1.csproj.GenerateResource.cache
+C:\Users\sabri\source\repos\Quoridor1\obj\Debug\Quoridor1.csproj.CoreCompileInputs.cache
+C:\Users\sabri\source\repos\Quoridor1\obj\Debug\Quoridor1.exe
+C:\Users\sabri\source\repos\Quoridor1\obj\Debug\Quoridor1.pdb
