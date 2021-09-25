@@ -23,14 +23,14 @@ namespace QuoridorGameLogic
             {
                 return cells[h, v];
             }
-        }
+        }// board[h, v] => Cell
         public Wall this[int dir, int h, int v]
         {
             get
             {
                 return walls[dir, h, v];
             }
-        }
+        }// board[0/1, h, v] => Wall
         private Token[] players;
         public Token getToken(int i) => players[i];
         private readonly int wallsize;
