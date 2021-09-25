@@ -46,7 +46,7 @@ namespace QuoridorGameLogic
         public Wall(int dir, int h, int v, int l)
         {
             _pos[0] = h;
-            _pos[0] = v;
+            _pos[1] = v;
             _len = l;
             _dir = dir;
         }

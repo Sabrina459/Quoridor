@@ -71,6 +71,7 @@ namespace QuoridorGameLogic
             PutWall(0, 1, 1);
             PutWall(0, 2, 1);
             PutWall(0, 1, 0);
+            PutWall(7, 0, 0);
             //
             this.players = players;
             this.wallsize = wallsize;
