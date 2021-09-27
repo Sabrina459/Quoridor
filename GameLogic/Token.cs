@@ -7,16 +7,16 @@ namespace QuoridorGameLogic
     public class Token
     {
         private int[] _pos = new int[2];
-        public int[] Pos
+        public int this[int i]
         {
-            private set
+            set
             {
-                _pos = value;
+                _pos[i] = value;
             }
 
             get
             {
-                return _pos;
+                return _pos[i];
             }
         }
 
@@ -29,6 +29,10 @@ namespace QuoridorGameLogic
             }
         }
 
+        public delegate (bool, int, int, int) MakeTurn(Board board, params int[] data);
+
+        public MakeTurn makeTurn;
+
         private bool _turn;
         public bool Turn
         {
@@ -38,16 +42,12 @@ namespace QuoridorGameLogic
             }
         }
 
-        public Token(int h, int v, bool t)
+        public Token(int h, int v, bool t, MakeTurn func)
         {
             _pos[0] = h;
             _pos[1] = v;
             _turn = t;
-        }
-
-        public virtual void MakeTurn()
-        {
-            // _pos[1] += 1;
+            makeTurn = func;
         }
     }
 }
