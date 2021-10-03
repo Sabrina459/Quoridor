@@ -6,18 +6,9 @@ namespace QuoridorGameLogic
 {
     public class Cell
     {
-        private int[] _pos = new int[2];
-        public int[] Pos
-        {
-            get
-            {
-                return _pos;
-            }
-        }
-        public Cell(int h, int v)
-        {
-            _pos[0] = h;
-            _pos[1] = v;
-        }
+        public int Filled { get; set; }
+        public Cell() { }
+
+        public Cell(int p) => Filled = p;
     }
 }

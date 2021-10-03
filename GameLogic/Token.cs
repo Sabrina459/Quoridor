@@ -20,7 +20,16 @@ namespace QuoridorGameLogic
             }
         }
 
-        private int _amWalls = 10;
+        private int _strt;
+        public int StrtPos
+        {
+            get
+            {
+                return _strt;
+            }
+        }
+
+        private int _amWalls;
         public int Walls
         {
             get
@@ -29,24 +38,18 @@ namespace QuoridorGameLogic
             }
         }
 
+        public void wallPlaced() => _amWalls -= 1;
+
         public delegate (bool, int, int, int) MakeTurn(Board board, params int[] data);
 
         public MakeTurn makeTurn;
 
-        private bool _turn;
-        public bool Turn
-        {
-            get
-            {
-                return _turn;
-            }
-        }
-
-        public Token(int h, int v, bool t, MakeTurn func)
+        public Token(int h, int v, int amW, int strt, MakeTurn func)
         {
             _pos[0] = h;
             _pos[1] = v;
-            _turn = t;
+            _amWalls = amW;
+            _strt = strt;
             makeTurn = func;
         }
     }

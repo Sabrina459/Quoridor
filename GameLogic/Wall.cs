@@ -18,37 +18,7 @@ namespace QuoridorGameLogic
                 _state = value;
             }
         }
-        private int[] _pos = new int[2];
-        public int[] Pos
-        {
-            get
-            {
-                return _pos;
-            }
-        }
-        private int _dir;
-        public int Dir
-        {
-            get
-            {
-                return _dir;
-            }
-        }
-        private int _len;
-        public int Len
-        {
-            get
-            {
-                return _len;
-            }
-        }
 
-        public Wall(int dir, int h, int v, int l)
-        {
-            _pos[0] = h;
-            _pos[1] = v;
-            _len = l;
-            _dir = dir;
-        }
+        public Wall() { }
     }
 }

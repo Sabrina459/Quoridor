@@ -6,6 +6,5 @@ namespace QuoridorGameLogic
     {
         public const int BOARDSIZE = 9;
         public const int PLAYERAMOUNT = 2;
-        public const int WALLSIZE = 2;
     }
 }
